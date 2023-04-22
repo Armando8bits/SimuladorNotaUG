@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calcula tus Notas UG</title>
+    <link rel="stylesheet" type="text/css" href="styTabl.css">
+</head>
+
+<body>
+    <header>
+        <h1>Simulador de Calificaciones </h1>
+        <h2>Para estudiantes de la Universidad de Guayaquil</h2>
+        <div class="Ldivisor"> </div>
+    </header>
+    <main>
+        <form>
+            <table border="0">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>G. Formativa</th>
+                        <th>G. Práctica</th>
+                        <th>Examen</th>
+                        <th>Promedio Parcial</th>
+                        <th>Rango Mínimo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>1er Parcial</th>
+                        <td><input type="text" id="textbox1" maxlength=4 oninput="calculalo()"></td>
+                        <td><input type="text" id="textbox2" maxlength=4 oninput="calculalo()"></td>
+                        <td><input type="text" id="textbox3" maxlength=4 oninput="calculalo()"></td>
+                        <td>
+                            <p id="LblPromedio1"></p>
+                        </td>
+                        <th>
+                            <div class="tooltip">
+                                <p id="LblRangoMinimo"></p>
+                                <span class="tooltiptext">RANGOS MÍNIMOS: Promedios mínimos a obtener en siguiente
+                                    parcial para aprobar con las justas o con excelencia académica.</span>
+                            </div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>2do Parcial</th>
+                        <td><input type="text" id="textbox4" maxlength=4 oninput="calculalo()"></td>
+                        <td><input type="text" id="textbox5" maxlength=4 oninput="calculalo()"></td>
+                        <td><input type="text" id="textbox6" maxlength=4 oninput="calculalo()"></td>
+                        <td>
+                            <p id="LblPromedio2"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">Promedio Global:</td>
+                        <td>
+                            <p id="LblPromedioG"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">
+                            <p id="LblMensajePro"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <p id="LblMensajeOp"></p>
+                        </td>
+                        <td><input type="text" id="textbox7" maxlength=4 oninput="calculalo()"></td>
+                    </tr>
+                    <tr>
+                        <th colspan="5">
+                            <p id="LblPromedioFINAL"></p>
+                        </th>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </main>
+    <script src="funcionalidad.js"></script>
+    <!-- <script src="Confetti.js"></script> -->
+</body>
+<footer>
+    <div class="Ldivisor"> </div>
+    <p>2023 Desarrollado por<a href="https://www.github.com/Armando8bits" target="_blank"> Armando Ramírez</a> </p>
+    <p>Este no es un sitio oficial de <a href="https://www.ug.edu.ec/" target="_blank"> Universidad de Guayaquil</a>, Recurso sin fines de lucro</p>
+</footer>
+
+</html>
